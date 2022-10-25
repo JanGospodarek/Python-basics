@@ -111,3 +111,29 @@
 
 #move files =================
 
+# import os
+#
+# source='test.txt'
+# destination="/Users/janek/test.txt"
+#
+# try:
+#     if os.path.exists(destination):
+#         print('there is already a file!')
+#     else:
+#         os.replace(source,destination)
+#         print(source+' was moved')
+# except FileNotFoundError as e:
+#     print(e)
+
+#delete files =================
+
+# import os
+# try:
+#     os.remove('test.txt')
+# except FileNotFoundError:
+#     print('that file wa snot found')
+
+# modules =================
+
+# import msgs
+# msgs.hello()
