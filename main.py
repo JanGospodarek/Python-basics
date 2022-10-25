@@ -69,3 +69,45 @@
 # finally:
 #     print('this will always execute')
 
+#file detection =================
+
+# import os
+#
+# path='/Users/janek/PycharmProjects/cw1/test.txt' #z backslashami uzywamy zamiast "\", "\\"
+# if os.path.exists(path):
+#     print('location exists')
+#     if os.path.isfile(path):
+#         print('this is a file')
+#     elif os.path.isdir(path):
+#         print('this is a directory')
+# else:
+#     print('doesnt exist')
+
+#reading file =================
+
+# try:
+#     with open('test.txt') as file:
+#       print(file.read())
+#     print(file.closed)
+# except FileNotFoundError:
+#     print('file not found')
+
+#write file =================
+
+# text='hejjjjj\n essa \n'
+# with open('test2.txt','w') as file:
+#     file.write(text)
+#
+# text='\n no hej'
+# with open('test2.txt','a') as file:
+#     file.write(text)
+
+#copying files =================
+
+#.copyfile(), .copy(), .copy2()
+# import shutil
+#
+# shutil.copyfile('test.txt','copy.txt')
+
+#move files =================
+
