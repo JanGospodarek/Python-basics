@@ -1,5 +1,5 @@
 #*args (tuple) =================
-
+import animals
 # def add(*data):
 #     sum=0
 #     data=list(data)
@@ -137,3 +137,21 @@
 
 # import msgs
 # msgs.hello()
+
+#OOP
+
+# from Car import Car
+# car1=Car('bmw','i3','2021','black')
+# car2=Car('ford','mustang',2022,'red')
+# car2.drive()
+# car1.stop()
+
+#OOP-inheritence
+
+from animals import *
+rabbit=animals.Rabbit()
+bird=animals.Bird()
+fish=animals.Fish()
+print(rabbit.alive)
+fish.eat()
+fish.swim()
