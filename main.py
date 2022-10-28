@@ -285,7 +285,7 @@ import animals
 # sunny_weather = {key: val for (key, val) in cities_weather.items() if val == 'sunny'}
 # print(sunny_weather)
 
-#zip(*iterables) =================
+# zip(*iterables) =================
 
 # usernames=['dude','bro','mister']
 # passwords=('p@ssword','abc123','guest')
@@ -294,18 +294,48 @@ import animals
 #
 # for key,val in users.items():print(key,val)
 
-#multithreading =================
+# multithreading =================
+#
+# import threading
+# import time
+#
+# print(threading.active_count())
+# def eat():
+#     time.sleep(3)
+#     print('you eat breakfast')
+#
+# def drink():
+#     time.sleep(5)
+#     print('you drink beer')
+#
+# x=threading.Thread(target=eat,args=())
+# x.start()
+# y=threading.Thread(target=drink,args=())
+# y.start()
+#
+# x.join()
+# y.join()
+# print(time.perf_counter())
+## eat()
+## drink()
 
-import threading
-import time
+#multiprocessing =================
 
-print(threading.active_count())
-def eat():
-    time.sleep(3)
-    print('you eat breakfast')
-def drink():
-    time.sleep(5)
-    print('you drink beer')
-
-eat()
-drink()
+# from multiprocessing import Process,cpu_count
+# import time
+# def counter(num):
+#     count=0
+#     while count<num:count+=1
+#
+# def main():
+#     a = Process(target=counter, args=(500000000,))
+#     b=Process(target=counter,args=(500000000,))
+#
+#     a.start()
+#     b.start()
+#     a.join()
+#     b.join()
+#     print('finished in: ',time.perf_counter()," seconds")
+#
+# if __name__=='__main__':
+#     main()
